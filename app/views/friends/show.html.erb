@@ -1,10 +1,15 @@
-<p style="color: green"><%= notice %></p>
-
 <div class="h-100 p-5 bg-light border rounded-3">
-  <h1><%= @friend.first_name %> <%= @friend.last_name %></h1>
-  <p><%= @friend.email %> | <%= @friend.phone %> | <%= @friend.twitter %></p>
-  <%= link_to "Back to friends", friends_path, class: 'btn btn-primary btn-sm' %>
-  <%= link_to "Edit this friend", edit_friend_path(@friend), class: 'btn btn-warning btn-sm' %>
+  <h1>
+    <%= @friend.first_name %> 
+    <%= @friend.last_name %>
+  </h1>
+  <p>
+    <%= @friend.email %> | 
+    <%= @friend.phone %> | 
+    <%= @friend.twitter %>
+  </p>
+  <%= link_to "Back", friends_path, class: 'btn btn-primary btn-sm' %>
+  <%= link_to "Edit", edit_friend_path(@friend), class: 'btn btn-warning btn-sm' %>
 </div>
 
 <div class='mt-4'>
