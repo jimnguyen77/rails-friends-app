@@ -7,6 +7,15 @@ To setup the app:
 3. Run the command: `bundle install` to install all gems (dependencies)
 4. Start the server: `rails server` or `rails s` or `rails s -b 0.0.0.0 -p 3000`
 
+## Migration (when setting up production)
+
+`rails db:migrate`
+
 ## Logging in
 
 `user@test.com / password`
+
+## Bundling
+
+1. `bundle config set --local without 'production'`
+2. `bundle install`
