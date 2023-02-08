@@ -1,5 +1,5 @@
 <div class="card">
-  <h5 class="card-header">Login</h5>
+  <h4 class="card-header">Login</h4>
   <div class="card-body">
       <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="field form-group mb-4">
@@ -21,8 +21,9 @@
         <%= f.submit "Login", class: "btn btn-primary" %>
       </div>
     <% end %>
-
-    <%= render "devise/shared/links" %>
   </div>
 </div>
 
+<div class="mt-4">
+  <%= render "devise/shared/links" %>
+</div>
